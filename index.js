@@ -1,6 +1,6 @@
 // code away!
 const { server, PORT } = require("./server.js");
-const userRouter = require("./users/userRouter");
+const { router: userRouter } = require("./users/userRouter");
 const postsRouter = require("./posts/postRouter");
 
 server.use("/api/users", userRouter);
