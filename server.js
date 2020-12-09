@@ -2,6 +2,8 @@ const express = require("express");
 const PORT = 8080;
 const server = express();
 
+server.use(express.json());
+
 server.get("/", logger, (req, res) => {
   res.send(`<h2>Let's write some middleware!</h2>`);
 });
